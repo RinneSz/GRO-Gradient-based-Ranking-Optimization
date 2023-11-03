@@ -1,6 +1,6 @@
 # GRO-Gradient-based-Ranking-Optimization
-
-Official implementation of [Defense Against Model Extraction Attacks on Recommender Systems](http://arxiv.org/abs/2310.16335), WSDM24.
+ 
+Implementation for [Defense Against Model Extraction Attacks on Recommender Systems](http://arxiv.org/abs/2310.16335), WSDM24.
 
 ## Requirements
 Python==3.7.16 and PyTorch==1.13.1.
@@ -42,3 +42,15 @@ the --model_code into sas.
 python distill_gro.py --device cuda:0 --lamb 1.0 --rankall --dataset_code ml-20m --model_code bert --bb_model_code bert --num_generated_seqs 3000
 ```
 - It will use a surrogate model indicated by --model_code to extract the target model indicated by --bb_model_code.
+
+
+## Citation
+If you find this repository helpful, please cite our paper:
+```
+@article{zhang2023defense,
+  title={Defense Against Model Extraction Attacks on Recommender Systems},
+  author={Zhang, Sixiao and Yin, Hongzhi and Chen, Hongxu and Long, Cheng},
+  journal={arXiv preprint arXiv:2310.16335},
+  year={2023}
+}
+```
