@@ -45,6 +45,4 @@ def train(args, export_root=None):
 if __name__ == "__main__":
     set_template(args)
 
-    args.num_epochs = 1
-
     train(args)
