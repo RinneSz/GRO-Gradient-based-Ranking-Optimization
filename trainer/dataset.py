@@ -58,7 +58,7 @@ class AbstractDistillationDataset(metaclass=ABCMeta):
 
     def _get_subfolder_path(self):
         root = self._get_folder_path()
-        return root.joinpath(self.bb_model_code + '_' + str(self.args.num_generated_seqs) + str(self.args.defense_mechanism) + '_' + str(self.args.lamb) + '_' + str(self.args.case))
+        return root.joinpath(self.bb_model_code + '_' + str(self.args.num_generated_seqs) + str(self.args.defense_mechanism) + '_' + str(self.args.lamb))
 
     def _get_distillation_dataset_path(self):
         folder = self._get_subfolder_path()
