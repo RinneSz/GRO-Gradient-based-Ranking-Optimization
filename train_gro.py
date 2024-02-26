@@ -10,7 +10,7 @@ from utils import *
 
 def train(args, export_root=None):
     args.lr = 0.001
-    fix_random_seed_as(args.model_init_seed)
+    # fix_random_seed_as(args.model_init_seed)
     train_loader, val_loader, test_loader = dataloader_factory(args)
 
     if args.model_code == 'bert':

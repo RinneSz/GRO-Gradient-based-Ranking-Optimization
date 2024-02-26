@@ -107,7 +107,7 @@ def recalls_and_ndcgs_for_ks_rankall(scores, candidates, labels, ks):
     answer_count = labels.sum(1)
 
     labels_float = labels.float()
-    rank = (-scores).argsort(dim=1)
+    rank = (-scores).argsort(dim=1) + 1
 
     cut = rank
     for k in sorted(ks, reverse=True):
@@ -142,7 +142,6 @@ def recalls_and_ndcgs_for_ks_defensed_rankall(scores, candidates, labels, ks, me
 
     labels_float = labels.float()
     _, perturbed_cut_indices = defense(scores, k=100, mechanism=mechanism)
-    perturbed_cut_indices = perturbed_cut_indices - 1
     for k in sorted(ks, reverse=True):
         cut_indices = perturbed_cut_indices[:, :k]
         # hits = torch.zeros_like(cut_indices).float()

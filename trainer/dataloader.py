@@ -8,6 +8,8 @@ DIS_DATASETS = {
     ML1MDistillationDataset.code(): ML1MDistillationDataset,
     ML20MDistillationDataset.code(): ML20MDistillationDataset,
     SteamDistillationDataset.code(): SteamDistillationDataset,
+    BeautyDistillationDataset.code(): BeautyDistillationDataset,
+    BeautyDenseDistillationDataset.code(): BeautyDenseDistillationDataset,
 }
 
 

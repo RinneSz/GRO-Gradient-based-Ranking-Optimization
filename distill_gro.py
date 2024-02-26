@@ -13,7 +13,7 @@ def distill(args, bb_model_root=None, export_root=None, resume=False):
     args.lr = 0.001
     args.num_epochs = 200
     args.enable_lr_warmup = False
-    fix_random_seed_as(args.model_init_seed)
+    # fix_random_seed_as(args.model_init_seed)
     _, _, surrogate_test_loader = dataloader_factory(args, bb_dataset=False)
     _, _, bb_test_loader = dataloader_factory(args, bb_dataset=True)
 

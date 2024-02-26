@@ -21,9 +21,8 @@ def set_template(args):
     args.min_uc = 5
     args.min_sc = 5
     args.split = 'leave_one_out'
-    # dataset_code = {'1': 'ml-1m', '20': 'ml-20m', 's': 'steam'}
     if args.dataset_code == 'ml-1m':
-        batch = 128
+        batch = 100
         args.num_epochs = 1000
 
         args.sliding_window_size = 0.5
@@ -33,7 +32,7 @@ def set_template(args):
         args.bert_max_len = 200
         args.bert_mask_prob = 0.2
         args.bert_max_predictions = 40
-        # args.lamb = 0.1
+        # args.lamb = 1
     elif args.dataset_code == 'ml-20m':
         batch = 24
         args.num_epochs = 10
@@ -45,7 +44,7 @@ def set_template(args):
         args.bert_max_len = 200
         args.bert_mask_prob = 0.2
         args.bert_max_predictions = 20
-        # args.lamb = 1
+        # args.lamb = 0.01
     elif args.dataset_code == 'steam':
         batch = 64
         args.num_epochs = 15
@@ -57,6 +56,18 @@ def set_template(args):
         args.bert_max_len = 50
         args.bert_mask_prob = 0.4
         args.bert_max_predictions = 20
+        # args.lamb = 0.01
+    elif args.dataset_code in ['beauty', 'beauty_dense']:
+        batch = 16
+        args.num_epochs = 50
+
+        args.sliding_window_size = 0.5
+        args.bert_hidden_units = 64
+        args.bert_dropout = 0.5
+        args.bert_attn_dropout = 0.2
+        args.bert_max_len = 50
+        args.bert_mask_prob = 0.6
+        args.bert_max_predictions = 30
         # args.lamb = 0.001
 
     args.train_batch_size = batch

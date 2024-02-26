@@ -81,3 +81,15 @@ class SteamDistillationDataset(AbstractDistillationDataset):
     @classmethod
     def code(cls):
         return 'steam'
+
+
+class BeautyDistillationDataset(AbstractDistillationDataset):
+    @classmethod
+    def code(cls):
+        return 'beauty'
+
+
+class BeautyDenseDistillationDataset(AbstractDistillationDataset):
+    @classmethod
+    def code(cls):
+        return 'beauty_dense'
