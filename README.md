@@ -7,7 +7,7 @@ Python==3.7.16 and PyTorch==1.13.1.
 
 ## Updates
 - Now supporting Amazon-Beauty dataset.
-- Fixed several minor bugs.
+- Fixed several small issues in the code and the settings.
 
 ## Train a target model
 
@@ -58,8 +58,8 @@ Amazon-Beauty:
 |----------------------|-------|-------|---------|---------|
 | _GRO_ Target         | 2.85  | 4.48  | 1.44    | 1.85    | 
 | _GRO_ Surrogate      | 2.26  | 3.58  | 1.15    | 1.48    |
-| _None_ Target        | 2.95  | 4.77  | 1.46    | 1.92    |
-| _None_ Surrogate     | 2.71  | 4.24  | 1.34    | 1.72    |
+| _None_ Target        | 2.90  | 4.67  | 1.46    | 1.88    |
+| _None_ Surrogate     | 2.78  | 4.31  | 1.44    | 1.78    |
 | _Random_ Target      | 1.19  | 2.30  | 0.54    | 0.82    |
 | _Random_ Surrogate   | 1.26  | 2.51  | 0.56    | 0.87    |
 | _Reverse_ Target     | 0.64  | 1.26  | 0.30    | 0.45    |
@@ -71,8 +71,8 @@ ML-1M:
 |----------------------|-------|-------|---------|---------|
 | _GRO_ Target         | 18.08 | 28.96 | 9.53    | 12.48   | 
 | _GRO_ Surrogate      | 11.46 | 21.94 | 5.19    | 7.82    |
-| _None_ Target        | 20.26 | 30.77 | 10.67   | 13.32   |
-| _None_ Surrogate     | 15.04 | 24.88 | 7.41    | 9.88    |
+| _None_ Target        | 20.18 | 30.70 | 10.61   | 13.26   |
+| _None_ Surrogate     | 15.11 | 24.93 | 7.51    | 9.98    |
 | _Random_ Target      | 5.84  | 12.08 | 2.70    | 4.26    |
 | _Random_ Surrogate   | 11.61 | 20.59 | 5.25    | 7.50    |
 | _Reverse_ Target     | 1.95  | 4.11  | 0.90    | 1.44    |
@@ -84,8 +84,8 @@ ML-20M:
 |----------------------|-------|-------|---------|---------|
 | _GRO_ Target         | 13.95 | 21.63 | 7.53    | 9.42    | 
 | _GRO_ Surrogate      | 8.03  | 14.42 | 3.70    | 5.30    |
-| _None_ Target        | 14.96 | 22.58 | 7.85    | 9.77    |
-| _None_ Surrogate     | 9.52  | 16.23 | 4.53    | 6.21    |
+| _None_ Target        | 14.86 | 22.50 | 7.77    | 9.67    |
+| _None_ Surrogate     | 9.62  | 16.34 | 4.62    | 6.31    |
 | _Random_ Target      | 4.64  | 9.45  | 2.12    | 3.32    |
 | _Random_ Surrogate   | 6.38  | 11.67 | 2.90    | 4.22    |
 | _Reverse_ Target     | 1.77  | 3.77  | 0.80    | 1.30    |
@@ -97,8 +97,8 @@ Steam:
 |----------------------|-------|-------|---------|---------|
 | _GRO_ Target         | 19.87 | 24.69 | 15.39   | 16.58   | 
 | _GRO_ Surrogate      | 19.05 | 23.50 | 14.96   | 16.08   |
-| _None_ Target        | 19.93 | 24.94 | 15.43   | 16.69   |
-| _None_ Surrogate     | 19.36 | 24.00 | 15.18   | 16.34   |
+| _None_ Target        | 19.93 | 24.84 | 15.43   | 16.69   |
+| _None_ Surrogate     | 19.46 | 24.11 | 15.28   | 16.42   |
 | _Random_ Target      | 4.37  | 8.77  | 1.99    | 3.09    |
 | _Random_ Surrogate   | 15.70 | 20.75 | 10.67   | 11.94   |
 | _Reverse_ Target     | 1.56  | 3.26  | 0.69    | 1.12    |
